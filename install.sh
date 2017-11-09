@@ -64,4 +64,4 @@ echo " "
 echo "Add in /boot/cmdline.txt"
 echo "cma=128M before rootwait"
 echo " "
-echo "And reboot!
+echo "And reboot!"
