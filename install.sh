@@ -20,7 +20,7 @@ echo "This will takes about 2h! Go on the forum : https://www.raspberrypi.org/fo
 # KERNEL #
 ##########
 echo "... Download Dependencies"
-apt-get install bc libncurses5-dev cmake build-essentials
+apt-get install bc libncurses5-dev cmake build-essential
 
 #Clone
 echo "... Clone https://github.com/6by9/linux/ - Branch unicam_v4_4.14"
@@ -64,4 +64,4 @@ echo " "
 echo "Add in /boot/cmdline.txt"
 echo "cma=128M before rootwait"
 echo " "
-echo "And reboot!
+echo "And reboot!"
