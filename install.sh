@@ -24,11 +24,11 @@ apt-get install bc libncurses5-dev cmake build-essential
 
 #Clone
 echo "... Clone https://github.com/6by9/linux/ - Branch unicam_v4_4.14"
-git clone --depth 1 -b unicam_v4_4.14 https://github.com/6by9/linux/
+git clone --depth 1 -b rpi-4.14.y-unicam-and-codecs https://github.com/6by9/linux/
 
 #Compile
 echo "... Compile Kernel"
-cd Linux
+cd linux
 make bcm2709_defconfig
 make -j4 zImage modules dtbs
 make modules_install
@@ -45,15 +45,15 @@ echo "... Kernel is ready!"
 # YATVA #
 #########
 
-echo "... Install yatva fork"
+echo "... Install yavta fork"
 echo "... Download raspberrypi/userland"
 git clone https://github.com/raspberrypi/userland.git
 echo "... Build userland"
 cd userland;./buildme
 
-echo "... Download yatva fork by 6by9"
+echo "... Download yavta fork by 6by9"
 git clone https://github.com/6by9/yavta
-cd yatva;make
+cd yavta;make
 
 echo " "
 echo "Everything should be installed"
